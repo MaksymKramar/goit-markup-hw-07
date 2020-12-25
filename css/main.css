@@ -34,6 +34,7 @@ img {
   --secondary-text-color: #757575;
   --accent-text: #2196f3;
   --white: #ffffff;
+  --link-color: #afb1b8;
   --background-team-section: #f5f4fa;
   --background-hero-section: #2f303a;
   --footer-link-color: #ffffff99;
@@ -64,7 +65,7 @@ body {
   letter-spacing: 0.02em;
 }
 
-.section__features, .section__projects {
+.section__features, .section__projects, .section__team, .section__clients {
   padding-bottom: 94px;
 }
 
@@ -335,5 +336,158 @@ body {
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--white);
+}
+
+.section__team {
+  padding-top: 94px;
+  background-color: var(--background-team-section);
+}
+
+.team__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.team__item {
+  text-align: center;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  background-color: var(--white);
+}
+
+.team__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.team__photo {
+  margin-bottom: 30px;
+}
+
+.team__name {
+  margin-bottom: 10px;
+  color: var(--main-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.team__speciality {
+  margin-bottom: 16px;
+  color: var(--secondary-text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.social__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  width: 206px;
+}
+
+.social__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  -webkit-transition: background-color var(--timing-fn);
+  transition: background-color var(--timing-fn);
+}
+
+.social__link:hover, .social__link:focus {
+  background-color: var(--accent-text);
+  -webkit-transition: background-color var(--timing-fn);
+  transition: background-color var(--timing-fn);
+}
+
+.social__icon {
+  fill: var(--link-color);
+  -webkit-transition: fill var(--timing-fn);
+  transition: fill var(--timing-fn);
+}
+
+.social__link:hover .social__icon,
+.social__link:focus .social__icon {
+  fill: var(--white);
+  -webkit-transition: fill var(--timing-fn);
+  transition: fill var(--timing-fn);
+}
+
+.section__clients {
+  padding-top: 94px;
+}
+
+.clients__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.clients__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid var(--link-color);
+  border-radius: 4px;
+  -webkit-transition: border-color var(--timing-fn);
+  transition: border-color var(--timing-fn);
+}
+
+.clients__link:hover, .clients__link:focus {
+  border-color: var(--accent-text);
+}
+
+.clients__logo {
+  fill: var(--link-color);
+  -webkit-transition: fill var(--timing-fn);
+  transition: fill var(--timing-fn);
+}
+
+.clients__link:hover .clients__logo,
+.clients__link:hover .clients__logo {
+  fill: var(--accent-text);
+  -webkit-transition: fill var(--timing-fn);
+  transition: fill var(--timing-fn);
 }
 /*# sourceMappingURL=main.css.map */
