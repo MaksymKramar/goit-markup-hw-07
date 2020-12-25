@@ -1,0 +1,16 @@
+.section__team {
+  padding-top: 94px;
+  @extend %section;
+}
+
+.container {
+  @extend %container;
+}
+
+.team__list {
+  @include centered-flex;
+}
+
+.team__item:not(:last-child) {
+  margin-right: 30px;
+}

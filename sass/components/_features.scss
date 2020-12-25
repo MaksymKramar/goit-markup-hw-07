@@ -1,0 +1,38 @@
+.section__features {
+  padding-top: 94px;
+  @extend %section;
+}
+
+.container__features {
+  @extend %container;
+}
+
+.visually-hidden {
+  @include visually-hidden;
+}
+
+.features__list {
+  @include centered-flex;
+}
+
+.features__item {
+  min-width: 270px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.icon-case {
+  margin-bottom: 30px;
+  padding: 25px 100px;
+  background-color: var(--background-team-section);
+}
+
+.features__title {
+  @include h3-text;
+}
+
+.features__text {
+  @include p-text;
+}

@@ -1,0 +1,15 @@
+.hero {
+  @include hero-section;
+}
+
+.hero__container {
+  @extend %container;
+}
+
+.hero__title {
+  @include hero-title;
+}
+
+.button {
+  @include button;
+}
