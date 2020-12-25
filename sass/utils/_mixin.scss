@@ -1,0 +1,130 @@
+@mixin centered-flex($type: flex, $align: center) {
+  display: $type;
+  align-items: $align;
+}
+
+//Блок Герой
+@mixin hero-section {
+  background-image: linear-gradient($linear-gradient),
+    url('../../images/bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--background-hero-section);
+  background-position: center;
+
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: $hero-padding-top;
+  padding-bottom: $hero-padding-bottom;
+
+  max-width: $hero-max-width;
+  min-height: $hero-min-height;
+
+  text-align: center;
+}
+
+@mixin hero-title {
+  margin: $hero-margin;
+
+  max-width: 696px;
+  color: $hero-color;
+
+  font-weight: $hero-font-weight;
+  font-size: $hero-font-size;
+  line-height: $hero-line-height;
+  letter-spacing: $hero-letter-spacing;
+  text-transform: $hero-text-transform;
+}
+
+// Кнопка
+@mixin button {
+  display: inline-block;
+  padding: 10px 32px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: 0px solid transparent;
+  min-width: 200px;
+
+  color: var(--white);
+  background-color: var(--accent-text);
+
+  font-family: $main-font;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+
+  cursor: pointer;
+}
+
+// Скрывает текст
+@mixin visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+// Название секций
+@mixin section-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+
+  color: var(--main-text-color);
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+// Блок Особености
+@mixin h3-text {
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  color: var(--main-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+@mixin p-text {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  color: var(--secondary-text-color);
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+//Чем мы занимаемся
+@mixin projects-text {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  @include centered-flex;
+  justify-content: center;
+
+  background: rgba(47, 48, 58, 0.8);
+  width: 100%;
+  height: 70px;
+
+  margin: 0;
+  padding: 0;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--white);
+}
