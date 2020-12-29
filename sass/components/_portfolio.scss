@@ -7,6 +7,10 @@
   @extend %container;
 }
 
+.visually-hidden {
+  @include visually-hidden;
+}
+
 .radio__button__list {
   @include centered-flex;
   justify-content: center;

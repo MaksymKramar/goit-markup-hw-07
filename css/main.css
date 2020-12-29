@@ -212,8 +212,8 @@ body {
 }
 
 .hero {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../images/bg.jpg");
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/bg.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/bg.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-color: var(--background-hero-section);
@@ -487,6 +487,7 @@ body {
 
 .clients__link:hover, .clients__link:focus {
   border-color: var(--accent-text);
+  outline: none;
 }
 
 .clients__logo {
@@ -496,7 +497,7 @@ body {
 }
 
 .clients__link:hover .clients__logo,
-.clients__link:hover .clients__logo {
+.clients__link:focus .clients__logo {
   fill: var(--accent-text);
   -webkit-transition: fill var(--timing-fn);
   transition: fill var(--timing-fn);

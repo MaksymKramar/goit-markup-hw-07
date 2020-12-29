@@ -33,6 +33,7 @@
   &:hover,
   &:focus {
     border-color: var(--accent-text);
+    outline: none;
   }
 }
 
@@ -42,7 +43,7 @@
   transition: fill var(--timing-fn);
 
   .clients__link:hover &,
-  .clients__link:hover & {
+  .clients__link:focus & {
     fill: var(--accent-text);
 
     transition: fill var(--timing-fn);
