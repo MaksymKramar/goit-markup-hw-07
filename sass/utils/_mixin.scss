@@ -50,7 +50,7 @@
 
 //Блок Герой
 @mixin hero-section {
-  background-image: linear-gradient($linear-gradient), url(../../images/bg.jpg);
+  background-image: linear-gradient($linear-gradient), url(../images/bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-color: var(--background-hero-section);
